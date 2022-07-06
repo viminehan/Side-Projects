@@ -1,0 +1,178 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html { 
+  background-image: url("../assets/worldmap.png"), linear-gradient(180deg, rgba(255,0,94,1) 0%, rgba(241,203,76,1) 100%);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+  font-family: 'Roboto', 'Oswald', sans-serif;
+  color: white;
+
+  height: 100%;
+} 
+
+body { 
+  height: 100%;
+  gap: 20px;
+}
+
+/******************************************
+/* FLEXBOX
+/*******************************************/
+.displayFlex { 
+  display: flex;
+}
+
+.flexColumn {
+  flex-flow: column;
+}
+.flexCenter { 
+  justify-content: center;
+  align-items: center;
+}
+
+.flexEvenly {
+  justify-content: space-evenly;
+}
+.alignFlexStart { 
+  align-items: flex-start;
+}
+
+.al
+
+/******************************************
+/* MODULAR LAYOUT
+/*******************************************/
+
+
+.trashyTitle {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.trashyLogo { 
+  width: 55px;
+}
+
+.formBox {
+  background: rgba(255, 2555, 255, 0.1);
+  border-radius: 0.5rem;
+  border: none;
+  -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+  box-shadow: 5px 5px 15px -2px #000000;
+  height: 50px;
+  color: white;
+}
+
+.bigBox {
+  width: 15rem;
+}
+
+.miniBox {
+  width: 5rem;
+}
+
+.userTextInput { 
+ padding-left: 10%;
+ font-weight: 900;
+}
+
+::placeholder {
+  color: white;
+  font-weight: 900;
+}
+
+.trashyButton { 
+  border-radius: 0.5rem;
+  border: none;
+  -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+  box-shadow: 5px 5px 15px -2px #000000;
+  height: 50px;
+  color: white;
+  text-align: center;
+  width: 10%;
+  border-radius: 2rem;
+  font-size: 1rem;
+  height: 50px;
+  padding-top: 13px;
+}
+
+.buttonIcon { 
+  width: 1rem;
+  position: relative;
+  top: 2px;
+}
+
+/******************************************
+/* ID STYLES
+/*******************************************/
+
+/*** Icon Bar Style ***/
+
+#iconBar {
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 25%;
+}
+
+#iconBar img { 
+  width: 5rem;
+}
+
+#iconBarTitle { 
+  margin-top: 10px;
+  margin-bottom: -10px;
+  font-size: 1.5rem;
+}
+
+#iconBar :hover  { 
+  border: 5px solid white;
+  border-radius: 100%;
+}
+
+/*** Individual Button Styles ***/
+
+#searchListingsButton { 
+  background: #F1CB4C;
+}
+
+#donateWasteButton { 
+  background: #FF005E;
+  margin-top: 50px;
+}
+
+#trashyTagline { 
+  font-size: 1rem;
+}
+
+/*** XXXXX ***/
+
+/******************************************
+/* DYNAMIC STYLES
+/*******************************************/
+.selectedType { 
+  border: 5px solid white;
+  border-radius: 100%;
+}

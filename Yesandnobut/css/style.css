@@ -1,0 +1,75 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html { 
+  background: rgb(131,251,218);
+  background: linear-gradient(180deg, rgba(131,251,218,1) 0%, rgba(250,159,242,1) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+body { 
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+#gameTitle { 
+  font-size: 2rem;
+  color: black;
+}
+
+#rollResult { 
+  font-size: 5rem;
+}
+
+#wordResult  { 
+  font-size: 2rem;
+ 
+}
+
+#rollButton { 
+  border-radius: 0.5rem;
+  border: none;
+  -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+  box-shadow: 5px 5px 15px -2px #000000;
+  height: 50px;
+  color: white;
+  text-align: center;
+  width: 10%;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  height: 50px;
+  padding-top: 13px;
+  background-color: black;
+}
+
+#tutTitle { 
+  margin-top: 3%;
+}
+
+.tutInfo { 
+  width: 60%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>100Devs Simulator</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+	</head>
+	<body class="flexColumnCenter">
+		<header>
+			<h1 id="cheat1"> 100Devs Simulator </h1>
+		</header>
+		<section id="tutorialSection" class="flexColumnCenter popBox">
+			<h2> Welcome to 100Devs Simulator </h2>
+			<p> In this simulation, you are the instructor of the 100Devs bootcamp. Can you help 100 of your students to get a job in web development? </p>
+			<p> Click 'Begin' to start the simulation</p>
+			<span id="beginButton" class="bigButton"> Begin </span> 
+		</section>
+		<section id="winGameSection" class="gameWinBox popBox">
+			<h2> CONGRATS! You helped 100 students get a job! </h2>
+			<p> Thank you for playing 100Devs Simulator by Violet Minehan (Squid#4752) </p>
+			<p> Click 'Play Again' to play another session. </p>
+			<span id="playAgainButton" class="bigButton"> Play Again </span>
+		</section>
+		<main id="gameSection">
+			<span id="tweetHelp"> Click 'Tweet' to send a tweet! </span>
+			<img id="tweetButton" src="TweetButton.png" alt="Tweet Button">
+			<section id="tweetInfo">
+				<div id="tweetNums" class="infoDiv">
+					<span id="twitterNumOfTweetsLabel"> Number of Tweets: </span>
+					<span id="twitterNumOfTweetsCount">0</span>
+				</div>
+				<div id="tweetData" class="infoDiv">
+					<span id="twitterFollowersLabel"> Twitter Followers: </span>
+					<span id="twitterFollowerCount">0</span>
+				</div>
+				<div id="potentialStudnetsDiv" class="infoDiv">
+					<span id="twitterPotentialStudentsLabel"> Potential Students: </span>
+					<span id="twitterPotentialStudentsCount">0</span>
+				</div>
+			</section>
+			<section id="hostClassSection">
+				<span id="classHelp"> Click 'Host Class' to host class for your students! </span>
+				<h2 id="hostClassButton" class="hostButton"> Host Class </h2>
+				<h2 id="classRunning" class="hostButton hidden classRun"> Class Running... </h2>
+				<img src="streamOffline.jpg" alt="Stream Offline" class="classView" id="streamOffline">
+				<img src="class.gif" alt="class GIF" class="classView hidden" id="streamOnline">
+				<section class="classSection">
+					<div class="infoDiv"> 
+						<span class="classInfo"> Number of Classes:  </span>
+						<span class="classInfo" id="classCount">0</span>
+					</div>
+					<div class="infoDiv"> 
+						<span class="classInfo"> Current Students:  </span>
+						<span class="classInfo" id="studentCount">0</span>
+					</div>
+					<div class="infoDiv"> 
+						<span class="classInfo"> Employed Students:  </span>
+						<span class="classInfo" id="employedStudents">0</span>
+					</div>
+				</section>
+			</section>
+		</main>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
